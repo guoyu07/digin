@@ -1,0 +1,206 @@
+
+.carousel-indicators .active {
+	position: absolute;
+	top: 12% !important;
+	width: 53px;
+	height: 53px;
+	background: #222;
+}
+
+.carousel-control {
+	position: relative  !important;
+	
+	width: 53px;
+	height: 53px;
+
+	font-size: 30px !important;
+	font-weight: 100;
+	line-height: 44px !important;
+	color: #FFF;
+	text-align: center;
+	background: none !important;
+	background-image:none;
+	
+	-webkit-border-radius: 23px;
+	-moz-border-radius: 23px;
+	
+	opacity: 0.5;
+	filter: alpha(opacity=50);
+}
+
+/* --------- END --------- */
+
+#myCarousel{
+	margin-top:0px;}
+
+.carousel {
+    height:100%;
+	margin-bottom: 0;
+	/*padding: 50px 40px 50px 0px;*/
+}
+
+/*.carousel-control {
+	left: 107px;
+}
+.carousel-control.right {
+	right: -5px;
+	top:79%!important;
+}*/
+
+
+
+/*For top Indicator*/
+
+.carousel-indicators-top {
+	right: 50%;
+	top: auto;
+	bottom: 0px;
+	margin-rightight: -19px;
+}
+
+.carousel-indicators-top li {
+	background: #333333;
+}
+
+.carousel-indicators-top .active {
+	background: #333333;
+}
+ 
+ /* vertical start*/
+
+.vertical .carousel-inner {
+	/*height: 74%;*/
+	padding-top:0px;
+}
+
+.carousel.vertical .item {
+	-webkit-transition: 0.6s ease-in-out top;
+	-moz-transition: 0.6s ease-in-out top;
+	-ms-transition: 0.6s ease-in-out top;
+	-o-transition: 0.6s ease-in-out top;
+	transition: 0.6s ease-in-out top;
+}
+
+.carousel.vertical .active {
+	top: 0;
+}
+
+.carousel.vertical .next {
+	top: 100%;
+}
+
+.carousel.vertical .prev {
+	top: -100%;
+}
+
+.carousel.vertical .next.left,
+.carousel.vertical .prev.right {
+	top: 0;
+}
+
+.carousel.vertical .active.left {
+	top: -100%;
+}
+
+.carousel.vertical .active.right {
+	top: 100%;
+}
+
+.carousel.vertical .item {
+	left: 0;
+}​
+
+/*Overwriten Bootstrap Classis*/
+.small-thumbnail {
+  display: block;
+  padding: 4px;
+  margin-bottom: 1px;
+  line-height: 1.428571429;
+  background-color: #ffffff;
+  border: 1px solid #dddddd;
+  border-radius: 4px;
+  -webkit-transition: all 0.2s ease-in-out;
+          transition: all 0.2s ease-in-out;
+}
+.custom-carousel-inner{
+	overflow: auto !important;
+    position: relative;
+    width: 70px !important;
+    height:280px;
+}
+.single-container{
+	/*margin-top: 50px;
+	width: 75%;*/
+}
+
+.single-container img{
+	width: 92.5%;
+	margin-left: 12px;
+}
+
+
+
+/*---------ACCORDION CSS START --------*/
+
+
+
+#accordion-first .accordion-group {
+    background: #f9f9f9 none repeat scroll 0 0;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+    padding: 5px 15px;
+}
+
+#accordion-first .accordion-heading, #accordion-first .accordion-toggle:hover, #accordion-first .accordion-heading .accordion-toggle.active {
+    background: none repeat scroll 0% 0% transparent;
+}
+#accordion-first .accordion-heading {
+    border-bottom: 0px none;
+    font-size: 16px;
+}
+
+#accordion-first .accordion-heading .accordion-toggle {
+    color: #222;
+    cursor: pointer;
+    display: block;
+    outline: medium none !important;
+    padding: 0 5px 9px !important;
+    text-decoration: none;
+}
+
+#accordion-first .accordion-heading .accordion-toggle.active em{background-color: #F7C221;}
+
+#accordion-first .accordion-heading .accordion-toggle > em {
+    background-color: none;
+    border-radius: 100px;
+    color: #FFF;
+    font-size: 14px;
+    height: 32px;
+    line-height: 32px;
+    margin-right: 10px;
+    text-align: center;
+    width: 32px;}
+
+
+/*---------ACCORDION CSS END --------*/
+
+#myCarousel.vertical{
+	border:none;
+}
+
+.productGallery{
+	margin:0 0 25px;
+}
+
+
+/*----------------------------------------------------------------------------------------------------------------------------------*/
+@media (min-width: 768px) {
+#myCarousel {
+    margin-top: 35px;
+}
+
+.custom-carousel-inner {
+    width: 125px !important;
+}
+
+}
