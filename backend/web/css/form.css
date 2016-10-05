@@ -1,0 +1,472 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Aug 11, 2015, 6:18:37 PM
+    Author     : user
+*/
+#msg{
+    color:red;
+    display: none;
+    margin-left: 80px;
+    margin-top: -26px;
+}
+
+#btnAdd{
+    float: right;
+	
+ /*    margin-top: -90px;
+    margin-left: 180px; */
+}
+#btnAdd:before{
+  content:"\e080";
+	line-height:1;
+	 font-family:"Glyphicons Halflings"; 
+	display:inline-block;
+	font-size:13px;
+}
+#btnAdd1:before{
+  content:"\e114";
+    line-height:1;
+     font-family:"Glyphicons Halflings"; 
+    display:inline-block;
+    font-size:13px;
+}
+
+#btnRemove{
+    float: right;
+	margin-top: 16px;
+   /* margin-left: 180px;
+    margin-right: 25px; */
+}
+#btnRemove:before{
+	
+	content:"\e079";
+	font-family:"Glyphicons Halflings"; 
+	line-height:1;
+	display:inline-block;
+	font-size:13px;
+}
+#btnRemove1:before{
+    
+    content:"\e113";
+    font-family:"Glyphicons Halflings"; 
+    line-height:1;
+    display:inline-block;
+    font-size:13px;
+}
+
+#list1{        
+      overflow-x:auto;   
+}
+#btnAdd1{
+    float: right;  
+	margin-top:40px;
+	margin-left: 30px;
+}
+
+#btnRemove1{
+    float: left; 
+	margin-top:10px;
+margin-left: 30px;	
+  
+}
+#catlist{
+     width: 100%;
+   overflow-x:auto;
+}
+.searchpath{
+    margin-left: 295px; 
+    margin-top:-85px;
+}
+/*.list2{
+    margin-left: 50px;
+    margin-top: -120px;
+   
+}*/
+#map {
+    width : 500px;
+    height: 300px;
+    margin-top: 10px;
+   }
+
+th{
+    padding: 20px;
+}
+td{
+    padding-top: 0px;
+    padding-right: 2px;
+    padding-bottom: 0px;
+    padding-left: 2px;
+}
+#day_1, #day_2, #day_3, #day_4, #day_5, #day_6, #day_7{
+    margin-left: 25px;
+}
+
+fieldset.scheduler-border {
+    border: 1px groove #ddd !important;
+    padding: 0 1.4em 1.4em 1.4em !important;
+    margin: 0 0 1.5em 0 !important;
+    -webkit-box-shadow:  0px 0px 0px 0px #000;
+            box-shadow:  0px 0px 0px 0px #000;            
+}
+
+legend.scheduler-border {
+        font-size: 1.2em !important;
+        font-weight: bold !important;
+        text-align: left !important;
+        width:auto;
+        padding:0 10px;
+        border-bottom:none;
+}
+    
+.time{      
+      width:90px;
+      line-height: 1;
+      font-size: 12px;
+      height: 30px;
+}
+
+.form-group {
+     margin-bottom: 0px; 
+}
+#row4, #row5, #row6, #row7{
+    display: none;
+}
+.wrktd{
+    //padding: 5px;
+    //text-align: left;
+}
+
+#addcat{
+    margin-top: 20px;
+}
+
+/******************css to display image with delete icon(x)in Product update***************************/
+.file-preview-frame{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.file-preview-frame .close {
+    //position: absolute;
+    top: 175px;
+    right: 4px;
+    z-index: 100; 
+    padding: 5px 2px 2px;    
+    font-weight: bold;
+    cursor: pointer;
+    opacity: .2;
+    text-align: center;
+    font-size: 12px;
+    line-height: 10px;
+    border-radius: 50%;
+}
+.file-preview-frame:hover .close {
+    opacity: 0.6;
+    color:#000;
+}
+.note{
+    font-weight: bold;
+    font-size: 14px;    
+    margin-top: 10px;
+}
+/*******************css for dashboard************************/
+.bg-aqua {
+    background-color: #00c0ef !important
+}
+.bg-green {
+    background-color: #00a65a !important;
+}
+.bg-yellow{
+    background-color: #f39c12 !important;
+}
+.bg-gray{
+    background-color: #BDB2B0 !important;
+}
+.inner >h3{
+    text-align: center;
+}
+.inner >p{
+    text-align: center;
+    font-weight: bold;
+}
+.small-box>.inner {
+    padding: 10px;
+}
+@media screen and (max-width: 360px) {
+   .small-box h3 {
+    font-size: 20px !important;
+    
+}
+}
+@media screen and (max-width: 450px) {
+   .small-box h3 {
+    font-size: 25px !important;
+    
+}
+}
+//@media (max-width: 767px)
+.small-box {
+    text-align: center;
+}
+.small-box {
+    border-radius: 2px;
+    position: relative;
+    display: block;
+    margin-bottom: 20px;
+    box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+}
+.small-box h3 {
+    font-size: 30px;
+    font-weight: bold;
+    margin: 0 0 10px 0;
+    white-space: nowrap;
+    padding: 0;
+    font-family: 'Source Sans Pro',sans-serif;
+}
+.small-box p {
+    font-size: 30px;
+}
+p {
+    margin: 0 0 10px;
+}
+.small-box>.small-box-footer {
+    position: relative;
+    text-align: center;
+    padding: 3px 0;
+    color: #fff;
+    color: rgba(255,255,255,0.8);
+    display: block;
+    z-index: 10;
+    background: rgba(0,0,0,0.1);
+    text-decoration: none;
+}
+.kv-file-upload
+{
+    display: none;
+}
+#listone{
+    margin-top: 20px;
+    overflow-x: auto;
+}
+#listtwo{
+    margin-top: 20px;
+    overflow-x: auto;
+}
+#btnSelect{
+    margin-left: -30px;
+}
+.prodtable{
+    margin-top: 20px;
+}
+#searchmsg{
+    color: red;
+    font-size: 12px;
+    word-wrap: break-word;
+    width: 145px;
+    margin-left: 90px;
+    margin-top: -35px;
+}
+#mceu_21{
+  /*   width:500px; */
+}
+
+/***************************new css*********************************/
+.chkdate{
+    display: none;
+}
+.agreett{
+    display: none;
+}
+.agree{
+    /* width: 100%; */
+    font-size: 15px;
+    font-weight: bold;
+}
+.blocked{
+    alignment-adjust: central;
+}
+.rptdate{
+    width: 200px;
+}
+.style2{
+    border-top: 3px double #8c8b8b;
+    width: 1110px;
+
+}
+
+/*********dashboard blocks css****************/
+.img1{
+    vertical-align: middle;
+    height: 10px;
+    width: 20px;
+    margin-left: 92px;
+    margin-top: -8px;
+}
+
+/****************product report listbox css**********/
+ #listone1{
+    margin-top: 20px;
+   // margin-bottom: 10px;
+    overflow-x: auto;
+    }
+/*****************end******************/
+/*************Used for metro, zone forms*********/
+#btnadd{
+    float: left;
+    margin-top: -145px;
+    margin-left: 280px; 
+}
+#btnremove{
+    float: left;
+    margin-top: -95px;
+    margin-left: 280px;
+}
+#list2{
+    float: left;
+    margin-top: -218px;
+    margin-left: 150px;
+}
+
+
+/*************Media Sign****************/
+@media (max-width: 800px) {
+    
+ /*    #btnRemove {
+    float: left;
+    margin-top: -50px;
+    margin-left: 105px;
+    margin-right: 25px;
+ }
+ 
+ #btnAdd {
+    float: left;
+    margin-top: -90px;
+    margin-left: 105px;
+} */
+    
+}
+
+
+@media only screen and (min-device-width : 320px)and (max-device-width : 480px) {
+	#map {
+    width : 290px !important;
+    height: 235px !important;
+   }
+    #listA{
+        width: 100%;
+    }
+    #listB{
+        width: 100%;
+    }
+    .col-xs-3 {
+    width: 60%;
+    } 
+	
+#btnAdd:before{
+	content:"\e114";
+	line-height:1;
+	 font-family:"Glyphicons Halflings"; 
+	display:inline-block;
+	font-size:17px;
+}
+#btnRemove:before{
+	content:"\e113";
+	font-family:"Glyphicons Halflings"; 
+	line-height:1;
+	display:inline-block;
+	font-size:17px;
+}
+}
+
+.cancelbtn1{
+	margin-top:0 !important;
+	margin-left:0px !important;
+}
+.acceptline{
+	font-size: 15px;
+	font-weight: bold;
+}
+.suggcatgry{
+	width:100%;
+}
+.catbtn{
+	margin-top: 18px;
+padding: 4px 12px !important;
+}
+
+.mt20{margin-top: 20px;}
+
+.formbox{
+	border: 1px solid rgb(157, 157, 157);
+padding: 15px;
+border-radius: 4px;
+}
+.addbtn{
+    margin-left: 0px !important;
+    margin-top: 0px !important;
+}
+.mt25{
+    margin-top: 25px
+}
+.cat-popup{
+    display:none;
+    background: #333;
+    padding: 10px;  
+    border: 2px solid #ddd;
+    float: left;
+    font-size: 13px;
+    position: fixed;
+    top: 55%; left: 50%;
+    z-index: 99999;
+    width: 30%;
+    box-shadow: 0px 0px 20px #999;
+    -moz-box-shadow: 0px 0px 20px #999; /* Firefox */
+    -webkit-box-shadow: 0px 0px 20px #999; /* Safari, Chrome */
+    border-radius:3px 3px 3px 3px;
+    -moz-border-radius: 3px; /* Firefox */
+    -webkit-border-radius: 3px; /* Safari, Chrome */
+}
+
+#mask {
+    display: none;
+    background: #000; 
+    position: fixed; left: 0; top: 0; 
+    z-index: 10;
+    width: 100%; height: 100%;
+    opacity: 0.6;
+    z-index: 999;
+}
+.close1{
+    float: right;
+color: rgb(255, 255, 255);
+font-size:16px;
+margin-top:-5px;
+}
+.btnlbl{
+    color:#fff !important;
+}
+.form-control:focus {
+    border-color: #ccc;
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(252, 253, 254, 0.01);
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(252, 253, 254, 0.01);
+}
+.mt7{
+    margin-top: 7px;
+}
+.ui-front{
+    z-index: 100000 !important;
+    width: 349px !important;
+    overflow: scroll;
+    overflow-y: scroll;
+    height: 300px;
+}
+.mt10{
+    margin-top: 10px
+}
+.close1:hover{
+    color:#fff !important;
+    text-decoration: none !important;
+}
