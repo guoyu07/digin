@@ -645,6 +645,10 @@ if (!empty($_SERVER['HTTP_CLIENT_IP'])) {
 
         $addr1='Pune, Maharashtra, India';
         $addrs_details = file_get_contents("http://ip-api.com/json/".$ip);
+
+        print_r($addrs_details);
+        die;
+
         \Yii::info('Address'.$addrs_details);  
         $addr_details=json_decode($addrs_details, true);
         \Yii::info('lat'.$addr_details['lat'].'...'.$addr_details['lon']);     

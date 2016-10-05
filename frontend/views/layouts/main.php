@@ -433,8 +433,8 @@ function initMap() {
 					<div class="container headWrap" style="overflow: visible !important;">
 						<div id="headerbar" class="container-fluid">	
 							<div class="mrl mobilehead hidden-lg hidden-md">
-								<img src="../images/digin1.png" class="digwordmob">
-								<img src="../images/diginword3.png" class="wordtextmob">
+								<img src="<?= FRONT_APP_IMG ?>digin1.png" class="digwordmob">
+								<img src="<?= FRONT_APP_IMG ?>diginword3.png" class="wordtextmob">
 							</div>
 							<button type="button" class="navbar-toggle offcanvas-toggle" data-toggle="offcanvas" data-target="#js-bootstrap-offcanvas-2"> <span class="sr-only">Toggle navigation</span> <span class="icon-dot"></span> <span class="icon-dot"></span> <span class="icon-dot"></span> </button>
 							<nav class="navbar navbar-second navbar-second navbar-offcanvas navbar-offcanvas-right navbar-offcanvas-touch navbar-offcanvas-fade" role="navigation" id="js-bootstrap-offcanvas-2">						
@@ -511,8 +511,8 @@ function initMap() {
 					<div id="headerbar" class="container-fluid">
 						<div class="mobilehead hidden-lg hidden-md">
 							<a href="index.php">
-								<img src="../images/digin1.png" class="digwordmob">
-								<img src="../images/diginword3.png" class="wordtextmob">
+								<img src="<?= FRONT_APP_IMG ?>digin1.png" class="digwordmob">
+								<img src="<?= FRONT_APP_IMG ?>diginword3.png" class="wordtextmob">
 							</a>
 							<?php if(!Yii::$app->user->isGuest){
 								$usernm= Yii::$app->user->identity->username;  ?>
@@ -539,8 +539,8 @@ function initMap() {
 								<div class="topheader">
 									<div class="midmenu">
 										<div class="menuimge">
-											<a href="index.php"><img src="../images/digin1.png" class="digword"></a>
-											<a href="index.php"><img src="../images/diginword3.png" class="wordtext"> </a>
+											<a href="index.php"><img src="<?= FRONT_APP_IMG ?>digin1.png" class="digword"></a>
+											<a href="index.php"><img src="<?= FRONT_APP_IMG ?>diginword3.png" class="wordtext"> </a>
 										</div>
 										
 										<div class=""> <!--*****new*****-->
@@ -576,7 +576,7 @@ function initMap() {
 														
 													<a class="icodec" href="index.php?r=cart/displaycart" data-toggle="tooltip" title="Add to cart">
 													<span class="cartitems newico">0</span>
-														<img class="moblcart" src="../images/PawndooBlack1.png">
+														<img class="moblcart" src="<?= FRONT_APP_IMG ?>PawndooBlack1.png">
 													</a>
 													</div> 
 												</li>
@@ -618,7 +618,7 @@ function initMap() {
 											<?php }  ?>
 										</div>
 										<a class="shoppingCart1" href="index.php?r=cart/displaycart" data-toggle="tooltip" title="Add to cart">
-										<img src="../images/pawndoocart.png" id="shoppingkart"> 
+										<img src="<?= FRONT_APP_IMG ?>pawndoocart.png" id="shoppingkart"> 
 										</a>
 									</div>
 									 
@@ -640,7 +640,7 @@ function initMap() {
 											   <input type="hidden" id="lng" name="currentlng" value="<?php echo $session['lng'] ?>">      
 											   <input type="text" id="type" name="search" placeholder="Search for Products, Services, Categories, Brands and Vendors" class="searchInput typesearch searchinp">											
 												<!-- ------------end-------------- -->
-												<button id="searchsubmit" type="submit" class="searchButton searchbtn" value="Search"><img src="../images/SearchLens.png" class="serchicn"></button>
+												<button id="searchsubmit" type="submit" class="searchButton searchbtn" value="Search"><img src="<?= FRONT_APP_IMG ?>SearchLens.png" class="serchicn"></button>
 											</form>
 									</span>	
 									<img id="locicon" src="images/loc.png" class="imgloc locatn" >
@@ -683,7 +683,7 @@ function initMap() {
 			<div class="searcbox1"><input id="mobaddress" type="text" name="search" value="<?php echo  $session['addr'] ?>"  class="locationInput"></div>
 			<div class="searcbox">
 				<input type="text" id="type1"  name="search" placeholder="Products, Services, Catagories, Brands and Vendors" class="searchInput typesearch">
-				<button type="submit" class="searchButton"><img src="../images/searchmob.png"></span> </button>
+				<button type="submit" class="searchButton"><img src="<?= FRONT_APP_IMG ?>searchmob.png"></span> </button>
 			</div> 
 		</div>
 	</form>

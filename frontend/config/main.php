@@ -58,7 +58,7 @@ return [
         ],
         
        'request' => [
-            'baseUrl' => 'https://www.digin.in',
+            'baseUrl' => '',
         ],
        
          'session' => [
