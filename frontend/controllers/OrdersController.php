@@ -943,7 +943,7 @@ class OrdersController extends Controller
                 $dtdcmodel->crtby=$userid;
                 $dtdcmodel->upddt=date('Y-m-d H:i:s');
                 $dtdcmodel->updby=$userid;
-                $dtdcmodel->save();             
+                $dtdcmodel->save();
                 Yii::info("DTDC details are saved before calling API.");
             
                 //creating docket object
